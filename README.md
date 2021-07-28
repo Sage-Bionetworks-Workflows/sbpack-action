@@ -17,6 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: upload file
-
+    - name: sbpack push
+      uses: include-dcc/sbpack-action@v0.0.1
+      with:
+        app_name: thomasyu888/test/testing
+        workflow_path: example/hello_world_workflow.cwl
+        auth_token: ${{secrets.SBG_AUTH_TOKEN }}
 ```
