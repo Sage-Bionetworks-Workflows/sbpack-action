@@ -12,10 +12,10 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Test Environment
+      - name: Setup SBG credentials
         run: |
           mkdir ~/.sevenbridges
-          OUTPUT_FILE=/.sevenbridges/credentials
+          OUTPUT_FILE=~/.sevenbridges/credentials
           cat > "$OUTPUT_FILE" << EOM
           [sbg]
           api_endpoint = "https://cavatica-api.sbgenomics.com/v2"
