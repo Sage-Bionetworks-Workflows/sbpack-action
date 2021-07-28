@@ -1,0 +1,19 @@
+name: "sbpack push"
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+description: "Push workflow file to sevenbridges application"
+
+inputs:
+
+  app_name:
+    description: "Name of application in this format: {user}/{project}/{app_name}"
+    required: true
+
+  workflow_path:
+    description: "Path to workflow"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
