@@ -20,4 +20,4 @@ with open(os.path.join(sbg_folder, "credentials"), 'w') as configfile:
     config.write(configfile)
 
 cmd = ['sbpack', 'sbg', app_name, workflow_path]
-subprocess.check_call(cmd)
+subprocess.call(cmd)
