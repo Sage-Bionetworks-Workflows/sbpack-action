@@ -1,4 +1,0 @@
-cat.cwl
-hello_world_workflow.cwl
-ls.cwl
-output.txt
