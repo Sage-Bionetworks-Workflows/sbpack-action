@@ -1,6 +1,6 @@
 ## About
 
-Github Action to upload files to [CAVATICA](https://cavatica.sbgenomics.com/).
+Using [sbpack](https://github.com/rabix/sbpack) to update seven bridges workflow applications.
 
 ## Usage
 To update application in seven bridges platforms, authentication tokens and there must be prexisting projects and applications.
