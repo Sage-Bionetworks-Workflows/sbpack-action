@@ -12,18 +12,7 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
 
-      # - name: Setup SBG credentials
-      #   run: |
-      #     mkdir ~/.sevenbridges
-      #     OUTPUT_FILE=~/.sevenbridges/credentials
-      #     cat > "$OUTPUT_FILE" << EOM
-      #     [sbg]
-      #     api_endpoint = "https://cavatica-api.sbgenomics.com/v2"
-      #     auth_token = "${{secrets.SBG_AUTH_TOKEN }}"
-      #     EOM
-      #     chmod +x "$OUTPUT_FILE"
-
-      - name: cavatica file upload
+      - name: sbpack push
         uses: ./
         with:
           app_name: thomasyu888/test/testing
