@@ -4,13 +4,15 @@ import subprocess
 
 # Set env variable
 app_name = os.getenv("INPUT_APP_NAME")
+api_endpoint = os.getenv("INPUT_API_ENDPOINT")
 # {user}/{project}/{app}
 workflow_path = os.getenv("INPUT_WORKFLOW_PATH")
 auth_token = os.getenv("INPUT_AUTH_TOKEN")
 
+
 # Write SBG config
 config = configparser.ConfigParser()
-config['sbg'] = {'api_endpoint': 'https://cavatica-api.sbgenomics.com/v2',
+config['sbg'] = {'api_endpoint': api_endpoint,
                  'auth_token': auth_token}
 
 sbg_folder = os.path.expanduser("~/.sevenbridges")

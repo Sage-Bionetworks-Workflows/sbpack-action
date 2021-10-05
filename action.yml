@@ -18,6 +18,10 @@ inputs:
     description: "Seven bridges auth token"
     required: true
 
+  api_endpoint:
+    description: "Seven bridges API endpoint"
+    required: true
+
 runs:
   using: "docker"
   image: "Dockerfile"

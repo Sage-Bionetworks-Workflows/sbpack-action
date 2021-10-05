@@ -23,4 +23,5 @@ jobs:
         app_name: thomasyu888/test/testing
         workflow_path: example/hello_world_workflow.cwl
         auth_token: ${{secrets.SBG_AUTH_TOKEN }}
+        api_endpoint: https://cavatica-api.sbgenomics.com/v2
 ```
